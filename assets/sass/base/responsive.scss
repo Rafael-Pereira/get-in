@@ -1,0 +1,38 @@
+@media screen and (max-width: 768px) {
+
+
+  .header {
+    font-size: 22px;
+  }
+
+  .project .bg span {
+    font-size: 9px;
+    padding: 14px;
+  }
+
+  .project-full {
+    margin-top: 30px;
+  }
+
+  .project-full:hover img {
+    left: 30%;
+  }
+
+  .project-full:hover .bg {
+    width: 50%;
+  }
+
+    .project .caption .text .main .mission {
+    font-size: .4em;
+  }
+
+  .project .caption .text .main .title {
+    font-size: 1.1em;
+  }
+
+  .project .caption .text {
+    max-width: 80%;
+    padding: 25px;
+  }
+
+}

@@ -1,0 +1,43 @@
+@media screen and (max-width: 768px) {
+  /* line 4, ../../assets/sass/base/responsive.scss */
+  .header {
+    font-size: 22px;
+  }
+
+  /* line 8, ../../assets/sass/base/responsive.scss */
+  .project .bg span {
+    font-size: 9px;
+    padding: 14px;
+  }
+
+  /* line 13, ../../assets/sass/base/responsive.scss */
+  .project-full {
+    margin-top: 30px;
+  }
+
+  /* line 17, ../../assets/sass/base/responsive.scss */
+  .project-full:hover img {
+    left: 30%;
+  }
+
+  /* line 21, ../../assets/sass/base/responsive.scss */
+  .project-full:hover .bg {
+    width: 50%;
+  }
+
+  /* line 25, ../../assets/sass/base/responsive.scss */
+  .project .caption .text .main .mission {
+    font-size: .4em;
+  }
+
+  /* line 29, ../../assets/sass/base/responsive.scss */
+  .project .caption .text .main .title {
+    font-size: 1.1em;
+  }
+
+  /* line 33, ../../assets/sass/base/responsive.scss */
+  .project .caption .text {
+    max-width: 80%;
+    padding: 25px;
+  }
+}

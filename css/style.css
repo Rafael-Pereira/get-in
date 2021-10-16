@@ -1,0 +1,460 @@
+/* line 1, ../assets/sass/base/base.scss */
+html {
+  scroll-behavior: smooth;
+}
+
+/* line 5, ../assets/sass/base/base.scss */
+body {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+/* line 9, ../assets/sass/base/base.scss */
+.header {
+  margin: 20px 0;
+  text-align: center;
+  color: #07b0ff;
+  font-size: 20px;
+  font-weight: 100;
+}
+/* line 16, ../assets/sass/base/base.scss */
+.header .logo {
+  display: block;
+  margin-bottom: 10px;
+}
+/* line 20, ../assets/sass/base/base.scss */
+.header .name {
+  color: #666;
+  font-weight: 400;
+}
+/* line 24, ../assets/sass/base/base.scss */
+.header .last-name {
+  font-weight: 100;
+}
+/* line 28, ../assets/sass/base/base.scss */
+.header a {
+  color: #666 !important;
+  transition: all .3s ease-in;
+}
+/* line 32, ../assets/sass/base/base.scss */
+.header a:hover {
+  color: #07b0ff;
+  text-decoration: none !important;
+}
+
+/* line 40, ../assets/sass/base/base.scss */
+.contact {
+  margin-top: 20px;
+  padding: 0;
+  background-color: #07b0ff;
+  position: relative;
+  height: 500px;
+}
+/* line 47, ../assets/sass/base/base.scss */
+.contact img {
+  border: 0;
+  -webkit-box-shadow: 0 0 0 0 transparent;
+  -moz-box-shadow: 0 0 0 0 transparent;
+  box-shadow: 0 0 0 0 transparent;
+  height: 500px;
+}
+/* line 56, ../assets/sass/base/base.scss */
+.contact-text {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5em;
+  font-weight: 100;
+  letter-spacing: 2px;
+}
+/* line 71, ../assets/sass/base/base.scss */
+.contact-text .title {
+  display: block;
+  margin-bottom: 20px;
+  font-size: 0.7em;
+}
+
+/* line 79, ../assets/sass/base/base.scss */
+.project {
+  padding: 20px;
+}
+/* line 82, ../assets/sass/base/base.scss */
+.project img {
+  position: relative;
+  left: 0;
+  transition: all .3s ease-in;
+}
+/* line 88, ../assets/sass/base/base.scss */
+.project .content {
+  overflow: hidden;
+}
+/* line 92, ../assets/sass/base/base.scss */
+.project .caption {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: calc(100% - 40px);
+  top: 20px;
+  left: 0;
+  height: calc(100% - 40px);
+}
+/* line 103, ../assets/sass/base/base.scss */
+.project .caption .text {
+  position: absolute;
+  z-index: 999;
+  max-width: 60%;
+  color: #dedede;
+  font-weight: 200;
+  opacity: 0;
+  overflow: hidden;
+  background: rgba(20, 20, 20, 0.85);
+}
+/* line 114, ../assets/sass/base/base.scss */
+.project .caption .text .main {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-bottom: 20px;
+  transition: all .3s ease-out;
+}
+/* line 121, ../assets/sass/base/base.scss */
+.project .caption .text .main .mission {
+  font-size: .6em;
+  font-weight: 300;
+  line-height: 1em;
+  letter-spacing: 2px;
+  margin-bottom: 5px;
+}
+/* line 129, ../assets/sass/base/base.scss */
+.project .caption .text .main .title {
+  text-transform: capitalize;
+  font-size: 1.4em;
+  font-weight: 500;
+  line-height: 1em;
+}
+/* line 139, ../assets/sass/base/base.scss */
+.project .caption .description {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  line-height: 1.3em;
+  letter-spacing: 1px;
+}
+/* line 149, ../assets/sass/base/base.scss */
+.project .caption .description .stack {
+  margin-top: 20px;
+}
+/* line 153, ../assets/sass/base/base.scss */
+.project .caption .description .link {
+  margin-top: 20px;
+  text-align: right;
+}
+/* line 158, ../assets/sass/base/base.scss */
+.project .caption .description .link a {
+  background: transparent;
+  border: 1px solid #fff;
+  color: #fff !important;
+  padding: 7px 27px;
+  border-radius: 50px;
+  transition: all .3s ease-in;
+}
+/* line 166, ../assets/sass/base/base.scss */
+.project .caption .description .link a:hover {
+  background: #fff;
+  color: #232323 !important;
+}
+/* line 176, ../assets/sass/base/base.scss */
+.project .bg {
+  visibility: hidden;
+  position: absolute;
+  width: 0;
+  height: 100%;
+  top: 0;
+  left: 0;
+  transition: all .2s ease-in;
+}
+/* line 185, ../assets/sass/base/base.scss */
+.project .bg span {
+  display: block;
+  text-align: right;
+  padding: 20px;
+  color: #fff;
+  font-size: 1em;
+  line-height: 1em;
+  letter-spacing: 2px;
+}
+
+/* line 200, ../assets/sass/base/base.scss */
+.project:hover img {
+  left: 30%;
+}
+/* line 204, ../assets/sass/base/base.scss */
+.project:hover .bg {
+  width: 50%;
+  visibility: visible;
+}
+/* line 210, ../assets/sass/base/base.scss */
+.project:hover .text {
+  animation: move 0.6s  ease-in;
+  animation-fill-mode: both;
+}
+/* line 215, ../assets/sass/base/base.scss */
+.project:hover .main {
+  animation: text-move-down 0.6s  ease-in;
+  animation-delay: .4s;
+  animation-fill-mode: both;
+}
+/* line 223, ../assets/sass/base/base.scss */
+.project:hover .description {
+  animation: text-move-up 0.8s  ease-in;
+  animation-delay: .6s;
+  animation-fill-mode: both;
+}
+/* line 229, ../assets/sass/base/base.scss */
+.project:hover .link {
+  bottom: 10%;
+  opacity: 1;
+}
+
+/* line 235, ../assets/sass/base/base.scss */
+.project-full {
+  margin-top: 40px;
+}
+
+/* line 241, ../assets/sass/base/base.scss */
+.project-full:hover img {
+  left: 20%;
+}
+/* line 245, ../assets/sass/base/base.scss */
+.project-full:hover .bg {
+  width: 20%;
+  visibility: visible;
+  box-shadow: 0px 0px 19px 0px rgba(0, 0, 0, 0.45);
+}
+/* line 253, ../assets/sass/base/base.scss */
+.project-full:hover .text {
+  animation: move 0.6s  ease-in;
+  animation-fill-mode: both;
+}
+/* line 258, ../assets/sass/base/base.scss */
+.project-full:hover .main {
+  animation: text-move-down 0.6s  ease-in;
+  animation-delay: .4s;
+  animation-fill-mode: both;
+}
+/* line 264, ../assets/sass/base/base.scss */
+.project-full:hover .description {
+  animation: text-move-up 0.8s  ease-in;
+  animation-delay: .6s;
+  animation-fill-mode: both;
+}
+/* line 270, ../assets/sass/base/base.scss */
+.project-full:hover .link {
+  bottom: 10%;
+  opacity: 1;
+}
+
+@keyframes move {
+  0% {
+    left: -5%;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    top: 30%;
+  }
+  5% {
+    opacity: 1;
+  }
+  40% {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    left: 15%;
+    top: 30%;
+  }
+  50% {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    left: 15%;
+    top: 30%;
+  }
+  60% {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    left: 15%;
+  }
+  100% {
+    opacity: 1;
+    left: 15%;
+    border-radius: 20px;
+    width: auto;
+    height: auto;
+    padding: 40px;
+    top: 30%;
+  }
+}
+@keyframes text-move-down {
+  0% {
+    top: -200px;
+    opacity: 0;
+    color: #232323;
+  }
+  100% {
+    color: #fff;
+    top: auto;
+    opacity: 1;
+  }
+}
+@keyframes text-move-up {
+  0% {
+    top: 200px;
+    opacity: 0;
+    color: #232323;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    color: #fff;
+    top: auto;
+    opacity: 1;
+  }
+}
+/* line 1, ../assets/sass/base/colors.scss */
+.blue {
+  background: #07b0ff;
+}
+
+/* line 4, ../assets/sass/base/colors.scss */
+.green {
+  background: #1ea3a5;
+}
+
+/* line 7, ../assets/sass/base/colors.scss */
+.blue2 {
+  background: #0b242b;
+}
+
+/* line 10, ../assets/sass/base/colors.scss */
+.blue3 {
+  background: #15132b;
+}
+
+/* line 13, ../assets/sass/base/colors.scss */
+.green2 {
+  background: #8ac746;
+}
+
+/* line 17, ../assets/sass/base/colors.scss */
+.black {
+  background: #141414;
+}
+
+/* line 20, ../assets/sass/base/colors.scss */
+.red {
+  background: #e50d2e;
+}
+
+/* line 23, ../assets/sass/base/colors.scss */
+.red2 {
+  background: #6f1b2b;
+}
+
+/* line 24, ../assets/sass/base/colors.scss */
+.purple {
+  background: #71535d;
+}
+
+/* line 28, ../assets/sass/base/colors.scss */
+.yellow {
+  background: #ffea1b;
+}
+
+/* line 32, ../assets/sass/base/colors.scss */
+.orange {
+  background: #ffc000;
+}
+
+/* line 37, ../assets/sass/base/colors.scss */
+.viral {
+  background: #ca1e8b;
+}
+
+/* line 41, ../assets/sass/base/colors.scss */
+.shaperhouse {
+  background: #100f21;
+}
+
+/* line 45, ../assets/sass/base/colors.scss */
+.spotissim {
+  background: #799eb2;
+}
+
+/* line 49, ../assets/sass/base/colors.scss */
+.miaw {
+  background: #2a4a77;
+}
+
+/* line 54, ../assets/sass/base/colors.scss */
+.mytree {
+  background: #78af28;
+}
+
+/* line 58, ../assets/sass/base/colors.scss */
+.tagmaster {
+  background: #1698bb;
+}
+
+@media screen and (max-width: 768px) {
+  /* line 4, ../assets/sass/base/responsive.scss */
+  .header {
+    font-size: 22px;
+  }
+
+  /* line 8, ../assets/sass/base/responsive.scss */
+  .project .bg span {
+    font-size: 9px;
+    padding: 14px;
+  }
+
+  /* line 13, ../assets/sass/base/responsive.scss */
+  .project-full {
+    margin-top: 30px;
+  }
+
+  /* line 17, ../assets/sass/base/responsive.scss */
+  .project-full:hover img {
+    left: 30%;
+  }
+
+  /* line 21, ../assets/sass/base/responsive.scss */
+  .project-full:hover .bg {
+    width: 50%;
+  }
+
+  /* line 25, ../assets/sass/base/responsive.scss */
+  .project .caption .text .main .mission {
+    font-size: .4em;
+  }
+
+  /* line 29, ../assets/sass/base/responsive.scss */
+  .project .caption .text .main .title {
+    font-size: 1.1em;
+  }
+
+  /* line 33, ../assets/sass/base/responsive.scss */
+  .project .caption .text {
+    max-width: 80%;
+    padding: 25px;
+  }
+}

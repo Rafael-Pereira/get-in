@@ -1,0 +1,274 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.header {
+  margin: 20px 0;
+  text-align: center;
+  color:#07b0ff;
+  font-size: 20px;
+  font-weight: 100;
+
+  .logo {
+    display: block;
+    margin-bottom: 10px;
+  }
+  .name {
+    color: #666;
+    font-weight: 400;
+  }
+  .last-name{
+    font-weight: 100;
+  }
+
+  a {
+    color: #666 !important;
+    transition: all .3s ease-in;
+
+    &:hover {
+      color:#07b0ff;
+      text-decoration: none !important;
+    }
+  }
+
+}
+
+.contact {
+  margin-top: 20px;
+  padding: 0;
+  background-color: #07b0ff;
+  position: relative;
+  height: 500px;
+
+  img {
+    border: 0;
+    -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    -moz-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    height: 500px;
+
+  }
+
+  &-text {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    font-weight: 100;
+    letter-spacing: 2px;
+
+    .title {
+      display: block;
+      margin-bottom: 20px;
+      font-size: 0.7em;
+    }
+  }
+}
+
+.project {
+  padding: 20px;
+
+  img {
+    position: relative;
+    left: 0;
+    transition: all .3s ease-in;
+  }
+
+  .content {
+    overflow: hidden;
+  }
+
+  .caption {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: calc(100% - 40px);
+    top:20px;
+    left: 0;
+    height: calc(100% - 40px);
+
+    .text {
+      position: absolute;
+      z-index: 999;
+      max-width: 60%;
+      color: #dedede;
+      font-weight: 200;
+      opacity:0;
+      overflow: hidden;
+      background: rgba(20,20,20, 0.85);
+
+
+      .main {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        margin-bottom: 20px;
+        transition: all .3s ease-out;
+
+        .mission {
+          font-size:.6em;
+          font-weight: 300;
+          line-height: 1em;
+          letter-spacing: 2px;
+          margin-bottom: 5px;
+        }
+
+        .title {
+          text-transform: capitalize;
+          font-size:1.4em;
+          font-weight: 500;
+          line-height: 1em;
+        }
+      }
+    }
+
+
+    .description {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      line-height: 1.3em;
+      letter-spacing: 1px;
+      
+
+      
+
+      .stack {
+        margin-top: 20px;
+      }
+
+      .link {
+        margin-top: 20px;
+        text-align: right;
+
+
+        a {
+          background: transparent;
+          border: 1px solid #fff;
+          color: #fff !important;
+          padding: 7px 27px;
+          border-radius: 50px;
+          transition: all .3s ease-in;
+
+          &:hover{
+            background: #fff;
+            color: #232323 !important;;
+          }
+
+        }
+      }
+    }
+  }
+
+  .bg {
+    visibility:hidden;
+    position: absolute;
+    width: 0;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transition: all .2s ease-in;
+
+    span {
+      display: block;
+      text-align: right;
+      padding: 20px;
+      color: #fff;
+      font-size:1em;
+      line-height: 1em;
+      letter-spacing: 2px;
+    }
+  }
+}
+
+
+.project:hover {
+
+  img {
+    left: 30%;
+  }
+
+  .bg {
+    width: 50%;
+    visibility: visible;
+
+  }
+
+  .text {
+    animation: move 0.6s  ease-in;
+    animation-fill-mode: both
+  }
+
+  .main {
+    animation: text-move-down 0.6s  ease-in;
+    animation-delay: .4s;
+    animation-fill-mode: both;
+    
+    
+  }
+
+  .description {
+    animation: text-move-up 0.8s  ease-in;
+    animation-delay: .6s;
+    animation-fill-mode: both;
+  }
+
+  .link {
+    bottom: 10%;
+    opacity:1;
+  }
+}
+
+.project-full {
+  margin-top: 40px;
+}
+
+.project-full:hover {
+
+  img {
+    left: 20%;
+  }
+
+  .bg {
+    width: 20%;
+    visibility: visible;
+    box-shadow: 0px 0px 19px 0px rgba(0,0,0,0.45);
+
+
+  }
+
+  .text {
+    animation: move 0.6s  ease-in;
+    animation-fill-mode: both
+  }
+
+  .main {
+    animation: text-move-down 0.6s  ease-in;
+    animation-delay: .4s;
+    animation-fill-mode: both;
+  }
+
+  .description {
+    animation: text-move-up 0.8s  ease-in;
+    animation-delay: .6s;
+    animation-fill-mode: both;
+  }
+
+  .link {
+    bottom: 10%;
+    opacity:1;
+  }
+}

@@ -1,0 +1,68 @@
+@keyframes move {
+  0% {
+    left: -5%;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    top: 30%;
+  }
+  5% {
+    opacity: 1;
+  }
+  40% {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    left: 15%;
+    top: 30%;
+  }
+  50% {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    left: 15%;
+    top: 30%;
+  }
+  60% {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    left: 15%;
+  }
+  100% {
+    opacity: 1;
+    left: 15%;
+    border-radius: 20px;
+    width: auto;
+    height: auto;
+    padding: 40px;
+    top: 30%;
+  }
+}
+@keyframes text-move-down {
+  0% {
+    top: -200px;
+    opacity: 0;
+    color: #232323;
+  }
+  100% {
+    color: #fff;
+    top: auto;
+    opacity: 1;
+  }
+}
+@keyframes text-move-up {
+  0% {
+    top: 200px;
+    opacity: 0;
+    color: #232323;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    color: #fff;
+    top: auto;
+    opacity: 1;
+  }
+}
